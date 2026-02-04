@@ -1,0 +1,87 @@
+@font-face{
+    src: url(fonts/PlaywriteNZBasic-Regular.ttf);
+    font-family: PlayWrite-Regular;
+}
+
+body {
+    background-color: pink;
+}
+.box {
+    background-color: rgb(255, 255, 255, 0.70);
+    padding: 25px;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 225px;
+    
+}
+#box1 {
+    width: 300px;
+    
+}
+#box2 {
+    height: 190px;
+
+}
+#box3 {
+    top: 100px;
+}
+
+h1 {
+    font-family: PlayWrite-Regular;
+    text-align: center;
+}
+
+/* Global Button*/
+.btn {
+    /* Box model */
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 0 auto;
+
+    /* Display */
+    display: inline-block;
+    text-align: center;
+
+    /* Position*/
+    position: relative;
+    left: 110px;
+    
+    /* Typography */
+    color: white;
+    text-decoration: none;
+
+    /* Background */
+    background-color: pink; 
+}
+.btn-yes {
+    /* Box model */
+    
+
+    /* Position*/
+    position: absolute; /* relative to .box */
+    left: 80%;    
+    top: 80%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    transition: left 0.2s, top 0.2s;
+}
+
+.btn-no {
+    position: absolute; /* relative to .box */
+    left: 25%;    
+    top: 80%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    transition: left 0.2s, top 0.2s;
+}
+
+.happyMe {
+    padding: 10px 25px;
+    width: 200px;
+    pointer-events: none; /* prevents dragging or selecting */
+}
