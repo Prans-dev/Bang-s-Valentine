@@ -4,7 +4,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const noButton = document.getElementById('noBtn');
     const yesButton = document.getElementById('yesBtn');
 
+    const music = document.getElementById("bgMusic");
+    
     yesButton.addEventListener('click', () => {
+        setTimeout(() => {
+        music.play();
+        }, 2000);
         console.log("Yes button clicked!");
         emailjs.send("service_95bhc27", "template_jgmv4cs", {
         message: "She clicked YES 💖"
@@ -48,5 +53,6 @@ window.addEventListener('DOMContentLoaded', () => {
         noButton.style.top = `${randomY}px`;
     }); 
 });
+
 
 
